@@ -1,0 +1,112 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.profile-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 90%;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: scale(1.05);
+}
+
+.profile-image img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-content h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.profile-content p {
+    color: #777;
+    margin: 10px 0;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-link {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+    background-color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .profile-card {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-card {
+        width: 100%;
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .profile-content h2 {
+        font-size: 1.2em;
+    }
+
+    .social-link {
+        padding: 8px 12px;
+    }
+}
+/* Explanation:
+HTML:
+The profile card is structured using a .profile-card container.
+Inside, there’s a .profile-image section with an img tag for the profile picture.
+The .profile-content section includes the name, job title, a brief bio, and social media links.
+CSS:
+The card has a max-width of 400px for larger screens and adjusts to 90% of the screen width on smaller devices.
+The profile image fills the card's width, and the text is centered.
+Social media links are styled as buttons that change color on hover.
+Media queries are used to adjust the card's layout and size for tablets (max-width: 768px) and smartphones (max-width: 480px).
+How It Works on Different Devices:
+Smartphones: The card takes up nearly the full width of the screen, ensuring it looks clean and readable on small screens.
+Tablets: The card remains centered and scales to a smaller size to fit the screen better.
+Laptops: The card appears with its default size, centered in the viewport with added hover effects for interactivity.
+You can replace the profile.jpg with an actual image file and the social links with real URLs. This basic card design is a solid foundation that you can expand upon with additional features as you become more comfortable with HTML, CSS, and JavaScript.
+ */
+
+
+
+
+
+
+
+
